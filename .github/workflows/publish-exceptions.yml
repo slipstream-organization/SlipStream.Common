@@ -1,0 +1,38 @@
+name: publish-exceptions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'SlipStream.Common/SlipStream.Common.Exceptions/**'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Compute version
+        id: v
+        run: |
+          prefix=$(grep -oP '(?<=<VersionPrefix>)[^<]+' SlipStream.Common/SlipStream.Common.Exceptions/SlipStream.Common.Exceptions.csproj)
+          echo "version=$prefix.${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+
+      - name: Pack
+        run: dotnet pack SlipStream.Common/SlipStream.Common.Exceptions -c Release -o out -p:Version=${{ steps.v.outputs.version }}
+
+      - name: Push to GitHub Packages
+        run: >
+          dotnet nuget push "out/*.nupkg"
+          --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+          --api-key ${{ secrets.GITHUB_TOKEN }}
+          --skip-duplicate

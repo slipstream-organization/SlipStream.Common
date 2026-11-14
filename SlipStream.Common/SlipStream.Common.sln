@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Web", "SlipStream.Common.Web\SlipStream.Common.Web.csproj", "{6FFD5655-AF74-4A8D-9D26-C123DF8677B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Exceptions", "SlipStream.Common.Exceptions\SlipStream.Common.Exceptions.csproj", "{4C6EF304-E686-4A58-A1FA-B246BB65787B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Mediator", "SlipStream.Common.Mediator\SlipStream.Common.Mediator.csproj", "{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FFD5655-AF74-4A8D-9D26-C123DF8677B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFD5655-AF74-4A8D-9D26-C123DF8677B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFD5655-AF74-4A8D-9D26-C123DF8677B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFD5655-AF74-4A8D-9D26-C123DF8677B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6EF304-E686-4A58-A1FA-B246BB65787B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6EF304-E686-4A58-A1FA-B246BB65787B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6EF304-E686-4A58-A1FA-B246BB65787B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6EF304-E686-4A58-A1FA-B246BB65787B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

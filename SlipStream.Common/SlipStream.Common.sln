@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Exception
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Mediator", "SlipStream.Common.Mediator\SlipStream.Common.Mediator.csproj", "{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Contracts", "SlipStream.Common.Contracts\SlipStream.Common.Contracts.csproj", "{495FF7EC-B90D-4267-B7F1-9D75DF116F0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipStream.Common.Messaging", "SlipStream.Common.Messaging\SlipStream.Common.Messaging.csproj", "{B716568E-13D0-40AE-8C41-6F7993E63146}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC46BD4D-B652-4CD5-9B50-6C26A0C5AF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495FF7EC-B90D-4267-B7F1-9D75DF116F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495FF7EC-B90D-4267-B7F1-9D75DF116F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495FF7EC-B90D-4267-B7F1-9D75DF116F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495FF7EC-B90D-4267-B7F1-9D75DF116F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B716568E-13D0-40AE-8C41-6F7993E63146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B716568E-13D0-40AE-8C41-6F7993E63146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B716568E-13D0-40AE-8C41-6F7993E63146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B716568E-13D0-40AE-8C41-6F7993E63146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
